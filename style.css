@@ -1,0 +1,106 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #007ACC;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+
+    justify-content: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #007ACC;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #0033ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0c0774;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0f708b;
+    color: white;
+}
+
+
+td {
+    background-color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* تنسيق الشريط في أسفل الصفحة */
+.footer-bar {
+    background-color: #003366; /* اللون الكحلي */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /* ارتفاع الشريط */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.footer-text.secondary {
+    color: white; /* اللون الأبيض لفانتزي دسوق */
+}
+
+.footer-text:first-child {
+    color: #00aaff; /* اللون الأزرق لـ SAIKO */
+}

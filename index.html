@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل نقاط اللاعبين</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>تسجيل نقاط اللاعبين</h1>
+
+    <form id="player-form">
+        <label for="name">اسم اللاعب:</label>
+        <input type="text" id="name" required>
+
+        <label for="position">المركز:</label>
+        <select id="position" required>
+            <option value="حارس">حارس</option>
+            <option value="مدافع">مدافع</option>
+            <option value="خط وسط">خط وسط</option>
+            <option value="مهاجم">مهاجم</option>
+        </select>
+
+        <label for="tackles">عدد القطعات:</label>
+        <input type="number" id="tackles" min="0" required>
+
+        <label for="goals">عدد الأهداف:</label>
+        <input type="number" id="goals" min="0" required>
+
+        <label for="assists">عدد الأسيستات:</label>
+        <input type="number" id="assists" min="0" required>
+
+        <label for="cleanSheet">كلين شيت:</label>
+        <input type="checkbox" id="cleanSheet">
+
+        <button type="button" onclick="calculatePoints()">إضافة اللاعب</button>
+    </form>
+
+    <h2>اللاعبين المسجلين</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>اسم اللاعب</th>
+                <th>المركز</th>
+                <th>عدد القطعات</th>
+                <th>عدد الأهداف</th>
+                <th>عدد الأسيستات</th>
+                <th>كلين شيت</th>
+                <th>النقاط</th>
+            </tr>
+        </thead>
+        <tbody id="player-list">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <!-- الشريط في أسفل الصفحة -->
+  <div class="footer-bar">
+    <span class="footer-text">SAIKO</span>
+    <span class="footer-text secondary">فانتزي دسوق</span>
+  </div>
+
+
+
+
+
+</body>
+</html>
